@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans
+    xmlns="http://www.springframework.org/schema/beans" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:p="http://www.springframework.org/schema/p" 
+    xsi:schemaLocation="http://www.springframework.org/schema/beans 
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+<!-- Creating Bean/ Object of Student Class -->
+<bean id="dept" class="com.coforge.training.SpringDemo.model.Department">
+
+<!-- Invokes Setter Methods () -->
+<property name="debtName" value="Computer Science"></property>
+
+</bean>
+
+<bean id="f1" class="com.coforge.training.SpringDemo.model.Faculty" autowire="byName">
+
+
+<!-- Invokes Setter Methods setName() of faculty class -->
+<property name="fId" value="101"></property>
+<property name="fName" value="Ravindra Nath Tagore"></property>
+<!--<property name="dept" ref="dept1"></property>  --><!-- Explicit object Injection -->
+</bean>
+
+
+</beans>
