@@ -37,7 +37,7 @@
 
 
 <label for="birthday">Birthday:</label>
-<input type="date" id="dob" name="dob" tabindex="5">
+<input type="date" pattern = "yyyy-MM-dd" id="dob" name="dob" tabindex="5">
 
 
 

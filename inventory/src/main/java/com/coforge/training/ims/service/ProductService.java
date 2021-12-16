@@ -17,6 +17,8 @@ public class ProductService {
 	private ProductRepository pRepo;
 	
 
+
+	
 	public List<Product> listAll() {
 	return pRepo.findAll(); // defined in JPA repo
 	}

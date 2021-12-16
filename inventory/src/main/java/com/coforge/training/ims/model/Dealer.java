@@ -3,9 +3,12 @@ package com.coforge.training.ims.model;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
 import java.nio.charset.StandardCharsets;
-import java.sql.Date;
+
 import java.util.Base64;
+import java.util.Date;
 
 import javax.persistence.*;
 
@@ -26,6 +29,8 @@ public class Dealer {
 	private String lname;
 	@Column(name="password")
 	private String password;
+	
+	@DateTimeFormat(pattern = "yyyy-MM-dd")
 	@Column(name="dob")
 	private Date dob;
 	@Column(name="phone")
@@ -82,7 +87,7 @@ public class Dealer {
 		normalString.getBytes(StandardCharsets.UTF_8) );
 		this.password = encodedString;
 	}
-
+	
 	public Date getDob() {
 		return dob;
 	}
