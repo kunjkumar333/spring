@@ -14,7 +14,6 @@
 <title>Spring MVC 5 Form Handling | CRM</title>
 </head>
 <body>
-
 	<div class="container">
 		<div class="col-md-offset-2 col-md-7">
 			<h2 class="text-center">CRM - Web Applications</h2>
@@ -58,8 +57,5 @@
 			</div>
 		</div>
 	</div>
-
-
-
 </body>
 </html>
